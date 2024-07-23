@@ -1,0 +1,5 @@
+imports:
+  - { resource: services/application.yaml }
+  - { resource: services/domain.yaml }
+  - { resource: services/infrastructure.yaml }
+  - { resource: services/user_interface.yaml }

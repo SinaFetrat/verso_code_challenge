@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  App\CodeChallenge\Domain\Rule\BuzzRule: ~
+  App\CodeChallenge\Domain\Rule\FizzRule: ~
+  App\CodeChallenge\Domain\Rule\FizzBuzzRule: ~
+  App\CodeChallenge\Domain\Rule\NumberRule: ~
+
+  App\CodeChallenge\Domain\FizzBuzzGenerator:
+    arguments:
+      $rules: [ '@App\CodeChallenge\Domain\Rule\BuzzRule', '@App\CodeChallenge\Domain\Rule\FizzRule', '@App\CodeChallenge\Domain\Rule\FizzBuzzRule', '@App\CodeChallenge\Domain\Rule\NumberRule' ]

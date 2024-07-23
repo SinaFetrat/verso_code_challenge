@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+
+use App\CodeChallenge\Infrastructure\ConsoleApplicationFactory;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$container = require __DIR__ . '/../src/Container.php';
+
+$application = ConsoleApplicationFactory::create($container);
+$application->run();
