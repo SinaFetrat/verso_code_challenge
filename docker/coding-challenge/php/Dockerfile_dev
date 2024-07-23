@@ -1,0 +1,9 @@
+FROM php:8.2-fpm-alpine3.18
+
+CMD ["php-fpm"]
+
+#start with composer
+RUN wget https://getcomposer.org/download/2.5.8/composer.phar -O /usr/local/bin/composer && \
+    chmod a+x /usr/local/bin/composer
+
+WORKDIR /app

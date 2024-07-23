@@ -1,0 +1,12 @@
+services:
+  php:
+    build:
+      context: php
+      dockerfile: Dockerfile_dev
+    volumes:
+      - ../../app:/app
+    environment:
+      COMPOSER_MEMORY_LIMIT: -1
+      COMPOSER_HOME: /tmp
+      PHP_IDE_CONFIG: serverName=verso-coding-challenge
+
