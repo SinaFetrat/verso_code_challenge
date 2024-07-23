@@ -1,0 +1,11 @@
+.idea/
+/var/
+!/var/cache/.gitkeep
+!/var/log/.gitkeep
+/vendor/
+/.phpunit.cache/
+/reports/
+/coverage/
+/phpunit.xml
+.phpunit.result.cache
+
